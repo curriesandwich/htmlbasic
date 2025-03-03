@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        td {
+            border: 1px solid;
+            width: 25%;
+            height: 25%;
+            text-align: center;
+        }
+        .card {
+            width: 50%;
+            margin: 0;
+        }
+        .container {
+           text-align: center;
+           font-size: larger;
+           color: blueviolet;
+       }
+       td:hover{
+           background-color: aquamarine;
+           transition: background-color 500ms;
+       }
+       img {
+           width: 100%;
+           transition: filter 500ms;
+       }
+       img {
+           width: 100%;
+           transition: filter 500ms;
+       }
+       img:hover{
+           filter: hue-rotate(150deg); 
+           transition: filter 500ms;
+       }
+       img:active{
+           filter: invert(75%);
+       }
+
+    </style>
+
+<script>
+
+    function play(audid){
+        document.getElementById(audid).play();
+    }
+
+</script>
+
+</head>
+
+<body>
+
+    <a href="../index.html">Back to home page</a>
+
+    <table>
+        <tr>
+
+            <td> <img src="pics/card1.png" class="card" onclick="play('aud1')"
+                onmouseenter="desc1.style.visibility=''"
+                onmouseleave="desc1.style.visibility='hidden'" >
+                
+                <div id="desc1" style="visibility:hidden" class="container">
+                    <h4>Name the note</h4>
+                    <p>What is the name of ts note?</p>
+                </div>
+            </td>
+
+            <td> <img src="pics/card2.png" class="card" onclick="play('aud2')" onmouseenter="desc2.style.visibility=''"
+                onmouseleave="desc2.style.visibility='hidden'" >
+                
+                <div id="desc2" style="visibility:hidden" class="container">
+                    <h4>Name the note</h4>
+                    <p>What is the name of ts note?</p>
+                </div>
+            </td>
+
+            <td> <img src="pics/card3.png" class="card" onclick="play('aud3')" onmouseenter="desc3.style.visibility=''"
+                onmouseleave="desc3.style.visibility='hidden'" >
+                
+                <div id="desc3" style="visibility:hidden" class="container">
+                    <h4>Name the note</h4>
+                    <p>What is the name of ts note?</p>
+                </div>
+            </td>
+
+            <td> <img src="pics/card4.jpg" class="card" onclick="play('aud4')" onmouseenter="desc4.style.visibility=''"
+                onmouseleave="desc4.style.visibility='hidden'" >
+                
+                <div id="desc4" style="visibility:hidden" class="container">
+                    <h4>Name the note</h4>
+                    <p>What is the name of ts note?</p>
+                </div>
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td> <img src="pics/card5.jpg" class="card" onclick="play('aud5')" onmouseenter="desc5.style.visibility=''"
+                onmouseleave="desc5.style.visibility='hidden'" >
+                
+                <div id="desc5" style="visibility:hidden" class="container">
+                    <h4>Name the note</h4>
+                    <p>What is the name of ts note?</p>
+                </div>
+            </td>
+
+            <td> <img src="pics/card6.png" class="card" onclick="play('aud6')" onmouseenter="desc6.style.visibility=''"
+                onmouseleave="desc6.style.visibility='hidden'" >
+                
+                <div id="desc6" style="visibility:hidden" class="container">
+                    <h4>Name the note</h4>
+                    <p>What is the name of ts note?</p>
+                </div>
+            </td>
+
+            <td> <img src="pics/card7.png" class="card" onclick="play('aud7')" onmouseenter="desc7.style.visibility=''"
+                onmouseleave="desc7.style.visibility='hidden'" >
+                
+                <div id="desc7" style="visibility:hidden" class="container">
+                    <h4>Name the note</h4>
+                    <p>What is the name of ts note?</p>
+                </div>
+            </td>
+
+            <td> <img src="pics/card8.jpg" class="card" onclick="play('aud8')" onmouseenter="desc8.style.visibility=''"
+                onmouseleave="desc8.style.visibility='hidden'" >
+                
+                <div id="desc8" style="visibility:hidden" class="container">
+                    <h4>Name the note</h4>
+                    <p>What is the name of ts note?</p>
+                </div>
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td> <img src="pics/card9.png" class="card" onclick="play('aud9')" onmouseenter="desc9.style.visibility=''"
+                onmouseleave="desc9.style.visibility='hidden'" >
+                
+                <div id="desc9" style="visibility:hidden" class="container">
+                    <h4>Name the note</h4>
+                    <p>What is the name of ts note?</p>
+                </div>
+            </td>
+
+            <td> <img src="pics/card10.png" class="card" onclick="play('aud10')" onmouseenter="desc10.style.visibility=''"
+                onmouseleave="desc10.style.visibility='hidden'" >
+                
+                <div id="desc10" style="visibility:hidden" class="container">
+                    <h4>Name the note</h4>
+                    <p>What is the name of ts note?</p>
+                </div>
+            </td>
+
+            <td> <img src="pics/card11.png" class="card" onclick="play('aud11')" onmouseenter="desc11.style.visibility=''"
+                onmouseleave="desc11.style.visibility='hidden'" >
+                
+                <div id="desc11" style="visibility:hidden" class="container">
+                    <h4>Name the note</h4>
+                    <p>What is the name of ts note?</p>
+                </div>
+            </td>
+
+            <td> <img src="pics/card12.png" class="card" onclick="play('aud12')" onmouseenter="desc12.style.visibility=''"
+                onmouseleave="desc12.style.visibility='hidden'" >
+                
+                <div id="desc12" style="visibility:hidden" class="container">
+                    <h4>Name the note</h4>
+                    <p>What is the name of ts note?</p>
+                </div>
+            </td>
+
+        </tr>
+    </table>
+    
+
+    <audio id="aud1">
+        <source src="voice1.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="aud2">
+        <source src="voice2.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="aud3">
+        <source src="voice3.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="aud4">
+        <source src="voice4.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="aud5">
+        <source src="voice5.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="aud6">
+        <source src="voice6.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="aud7">
+        <source src="voice7.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="aud8">
+        <source src="voice8.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="aud9">
+        <source src="voice9.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="aud10">
+        <source src="voice10.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="aud11">
+        <source src="voice11.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="aud12">
+        <source src="voice12.mp3" type="audio/mpeg">
+    </audio>
+
+
+
+
+</body>
+</html>

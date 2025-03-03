@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function show(pgid){
+            hideall();
+            document.getElementById("pg"+pgid).style.display='';
+            document.getElementById("h"+pgid).style.display='';
+        }
+        function hideall(){
+            for (i=0;i<20;i++){
+                theId = document.getElementById("pg"+i);
+                anId = document.getElementById("h"+i)
+                if (theId!=null)
+                    document.getElementById("pg"+i).style.display='none';
+                if (anId!=null)
+                document.getElementById("h"+i).style.display='none'
+            }
+ 
+ 
+        }
+        function play(audid){
+            document.getElementById(audid).play();
+        }
+        window.onload = function () {
+            show('1');
+        };
+    </script>
+
+
+</head>
+</html>
+
+<a href="../index.html">Back to home page</a>
+
+<style>
+    .center {
+        text-align: center;
+    }
+</style>
+
+<div class="center">
+
+    <h1>The Friendly Number One</h1>
+
+    <a href="#" onclick="show('1')">Page 1 </a>
+    <a>---</a>
+    <a href="#" onclick="show('2')">Page 2 </a>
+    <a>---</a>
+    <a href="#" onclick="show('3')">Page 3 </a>
+    <a>---</a>
+    <a href="#" onclick="show('4')">Page 4 </a>
+    <a>---</a>
+    <a href="#" onclick="show('5')">Page 5 </a>
+
+    <a name="pg1"></a>
+
+    <h2 id="h1" style="display: none;">Page 1</h2>
+    
+    <p id="pg1" style="display:none">
+
+            <img src="https://images.squarespace-cdn.com/content/v1/5493706de4b0ecaa4047b871/1553029411779-Z3I99QCMXIIJRHDG2BLM/1+FCS.jpeg?format=1500w" width="25%" onclick="play('aud1')">
+
+            <audio id="aud1">
+                <source src="pg1.mp3" type="audio/mpeg">
+            </audio>
+
+            <br>
+            I woke in the night to a noise from the kitchen,
+            <br>
+            So off I set out on a fact-finding mission.
+            <br><br><br>
+            Whatever it was, I did not have a clue.
+            <br>
+            As I got closer I heard a loud chew.
+            <br><br><br>
+            The fridge door was open with food on the ground.
+            <br>
+            A tiny blue penguin was looking around!
+            <br><br><br>
+            He looked through our food and he tossed it aside.
+            <br>
+            He opened each can and shook out the inside.
+            <br><br><br>
+            “Excuse me!” I said, but he seemed not to care.
+            <br>
+            I shut the fridge door and he shot me a glare.
+            <br><br><br>
+            “Jelly,” he said as he held up some bread,
+            <br>
+            With smooth peanut butter, he must have just spread.
+            <br><br><br>
+
+    </p>
+
+    
+    <a name="pg2"></a>
+
+    <h2 id="h2" style="display: none;">Page 2</h2>
+
+    <p id="pg2" style="display: none;">
+
+        <img src="https://images.squarespace-cdn.com/content/v1/5493706de4b0ecaa4047b871/1553029427674-6CY04NV4109HI6Q4JJKC/2+FCS.jpeg?format=1500w" width="25%" onclick="play('aud2')">
+
+            <audio id="aud2">
+                <source src="pg2.mp3" type="audio/mpeg">
+            </audio>
+
+        <br>
+        “Jelly?” I answered, “I... think we ran out,”
+        <br>
+        The little blue penguin, now wore a blue pout.
+        <br><br><br>
+        “Jelly,” he said as he waddled away.
+        <br>
+        Without any jelly, why would he stay?
+        <br><br><br>
+        I followed him out through our squeaky backdoor.
+        <br>
+        An igloo was there, that was not there before.
+        <br><br><br>
+        He slid on his belly, inside, out of sight.
+        <br>
+        But, it wasn’t the oddest thing I saw that night.
+        <br><br><br>
+        I heard a loud ruckus and ran back to see,
+        <br>
+        A giant giraffe flipping though my tv.
+        <br><br><br>
+
+    </p>
+
+
+    <a name="pg3"></a>
+
+    <h2 id="h3" style="display: none;">Page 3</h2>
+
+    <p id="pg3" style="display: none;">
+
+        <img src="https://images.squarespace-cdn.com/content/v1/5493706de4b0ecaa4047b871/1553029449953-WM2I9JZPZRFZTDML3C0W/3+FCS.jpeg?format=1500w" width="25%" onclick="play('aud3')">
+
+            <audio id="aud3">
+                <source src="pg3.mp3" type="audio/mpeg">
+            </audio>
+
+        <br>
+        He munched on some chips and kept changing the channel
+        <br>
+        He wore a bathrobe that was made of red flannel.
+        <br><br><br>
+        “Excuse me!” I yelled but he turned up the sound,
+        <br>
+        And most of the chips ended up on the ground.
+        <br><br><br>
+        He tossed up a few and he took a big bite.
+        <br>
+        But, it wasn’t the oddest thing I saw that night.
+        <br><br><br>
+        I heard water splashing the bathroom upstairs,
+        <br>
+        And found a large octopus bathing in there.
+        <br><br><br>
+        She had my green shower cap on, just my luck.
+        <br>
+        I saw she had taken my new rubber duck.
+        <br><br><br>
+        I said “Finish up!”, and she told me, “All right.”
+        <br>
+        But, it wasn’t the oddest thing I saw that night.
+        <br><br><br>
+        Back in my bedroom, a CRASH and a THUD.
+        <br>
+        Two lemurs were throwing around balls of mud.
+        <br><br><br>
+        My room was a mess and they both were to blame.
+        <br>
+        I swear I had just cleaned it up! What a shame.
+        <br><br><br>
+
+    </p>
+
+
+    <a name="pg4"></a>
+
+    <h2 id="h4" style="display: none;">Page 4</h2>
+
+    <p id="pg4" style="display: none;">
+
+        <img src="https://images.squarespace-cdn.com/content/v1/5493706de4b0ecaa4047b871/1553029470709-Y2DA2RELGMFK0OY371AU/4+FCS.jpeg?format=1500w" width="25%" onclick="play('aud4')">
+
+        <audio id="aud4">
+            <source src="pg4.mp3" type="audio/mpeg">
+        </audio>
+
+        <br>
+        There was mud on the dresser, the desk, and the light.
+        <br>
+        But, it wasn’t the oddest thing I saw that night.
+        <br><br><br>
+
+    </p>
+
+    
+    <a name="pg5"></a>
+
+    <h2 id="h5" style="display: none;">Page 5</h2>
+
+    <p id="pg5" style="display: none;">
+
+        <img src="https://images.squarespace-cdn.com/content/v1/5493706de4b0ecaa4047b871/1553028641499-Q9JSZ9ICNHS9LZ3MMTSU/Star+FCS.jpeg?format=1500w" width="25%" onclick="play('aud5')">
+
+            <audio id="aud5">
+                <source src="pg5.mp3" type="audio/mpeg">
+            </audio>
+
+        <br>
+        Outside I looked up, and I know it’s bizarre,
+        <br>
+        But guess what flew by me? A bright shooting star!
+        <br><br><br>
+        I wished for the penguin to get all his jelly.
+        <br>
+        I wished the giraffe would stop using my telly.
+        <br><br><br>
+        I wished that the octopus there in my tub,
+        <br>
+        Would exit the bathroom and give it a scrub.
+        <br><br><br>
+        I wished that my room would somehow become clean.
+        <br>
+        I wished that this nonsense would all be a dream.
+        <br><br><br>
+        The lemurs both left. The giraffe had enough.
+        <br>
+        The octopus gave me back all of my stuff.
+        <br><br><br>
+        The blue penguin waddled right up to my feet.
+        <br>
+        He carried a sandwich, most ready to eat.
+        <br><br><br>
+        Then he flew off when he flapped both his wings
+        <br>
+        And that, of it all, was the oddest of things...
+        <br><br><br>
+
+    </p>
+
+
+</div>
