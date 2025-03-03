@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Reset default styles */
+        body, h1, p, a {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Use an Imgur background image (add your Imgur URL here) */
+        body {
+            font-family: 'Poppins', sans-serif; /* Cute and modern font */
+            background-color: #FDEFF7; /* Soft pastel pink background */
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+            background-image: url("./bg.png"); /* Replace with your Imgur link */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        html {
+  height: 100%;
+  background: linear-gradient(#123 30%, rgb(86, 172, 251));
+  overflow: hidden;
+}
+
+.snow, .snow:before, .snow:after {
+  position: absolute;
+  top: -600px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: radial-gradient(6px 6px at 446px 467px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 462px 585px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 544px 511px, white 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 428px 89px, white 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 337px 549px, white 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 300px 211px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 472px 594px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 54px 517px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 322px 570px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 146px 61px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 438px 494px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 422px 106px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 273px 593px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 370px 302px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 145px 148px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 179px 310px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 54px 242px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 15px 438px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 282px 342px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 451px 437px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 385px 239px, white 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 538px 459px, white 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 536px 259px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 332px 68px, white 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 299px 498px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 225px 324px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 203px 576px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 21px 281px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 93px 358px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 215px 77px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 167px 94px, white 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 408px 244px, white 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 394px 534px, white 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 462px 345px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 142px 531px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 137px 347px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 248px 435px, white 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 110px 480px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 125px 276px, white 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 458px 298px, white 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 455px 539px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 466px 91px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 225px 180px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 49px 298px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 229px 407px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 5px 124px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 231px 242px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 57px 528px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 409px 51px, white 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 475px 237px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 568px 343px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 493px 23px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 367px 348px, white 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 367px 258px, white 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 42px 173px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 202px 171px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 461px 135px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 575px 176px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 237px 395px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 498px 65px, white 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 370px 150px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 42px 69px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 485px 92px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 147px 343px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 97px 362px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 490px 418px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 484px 111px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 114px 296px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 266px 87px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 470px 526px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0));
+  background-size: 600px 600px;
+  animation: snow 5s linear infinite;
+  content: "";
+  pointer-events: none;
+}
+
+.snow:after {
+  margin-left: -200px;
+  opacity: 0.4;
+  animation-duration: 6s;
+  animation-direction: reverse;
+  filter: blur(3px);
+}
+
+.snow:before {
+  animation-duration: 9s;
+  animation-direction: reverse;
+  margin-left: -300px;
+  opacity: 0.65;
+  filter: blur(1.5px);
+}
+@keyframes snow {
+  to {
+    transform: translateY(600px);
+  }
+}
+
+        /* Page Heading */
+        h1 {
+            color: white; /* Soft pink for the heading */
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            letter-spacing: 2px;
+        }
+
+        /* Button Link Styles */
+        a {
+            display: inline-block;
+            padding: 14px 24px;
+            margin: 15px 0;
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-align: center;
+            color: white;
+            background-color: #F4A300; /* Soft yellow */
+            border-radius: 12px;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Button Hover Effects */
+        a:hover {
+            background-color: #FF6F61;
+            transform: translateY(-5px);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .link-container {
+            text-align: center;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .link-container a {
+            background-color: #A7C7E7; /* Soft pastel green */
+        }
+
+        .link-container a:hover {
+            background-color: #bbd3eb;
+        }
+
+        .decor-right {
+            top: 10px;
+            right: 10px;
+        }
+
+        .decor-bottom-left {
+            bottom: 10px;
+            left: 10px;
+            font-size: 1.5rem;
+            color: #F4A300;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="snow" ></div>
+    <h1>hi</h1>
+
+    <div class="link-container">
+        <a href="1audiotool/index.html">Link to AudioTool page</a>
+        <br>
+        <a href="2htmlbasic/news.html">Link to CNN article</a>
+        <br>
+        <a href="2htmlbasic/story.html">Link to Children's Story</a>
+        <br>
+        <a href="2htmlbasic/pagedstory.html">Link to Children's Story (Paged)</a>
+        <br>
+        <a href="2htmlbasic/cue.html">Link to Cue Cards</a>
+    </div>
+    
+</body>
+</html>
